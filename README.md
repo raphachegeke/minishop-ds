@@ -3,6 +3,8 @@
 MiniShop is a simple e-commerce web application built with **Laravel 12**.  
 It includes an admin panel for managing products and a customer-facing catalog with a responsive design using Bootstrap.
 
+Here is the video Recording: https://drive.google.com/file/d/1GF8y_6Of2Obluw06zVpEgTr7qeKjjndw/view?usp=drive_link
+
 ---
 
 ## Features
