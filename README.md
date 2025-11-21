@@ -1,23 +1,69 @@
 # MiniShop - Laravel E-commerce
 
-A simple e-commerce application built with Laravel.
+MiniShop is a simple e-commerce web application built with **Laravel 12**.  
+It includes an admin panel for managing products and a customer-facing catalog with a responsive design using Bootstrap.
+
+---
 
 ## Features
-- Admin dashboard for product management
+- Admin dashboard for managing products (CRUD)
 - Customer-facing product catalog
-- Responsive design
+- Responsive design (Bootstrap 5)
+- Form validation for products
+- Flash messages for actions (success/error)
 
-## Setup
-1. Clone repository
-2. Run `composer install`
-3. Copy `.env.example` to `.env`
-4. Set `DB_CONNECTION=sqlite`
-5. Run `php artisan migrate --seed`
-6. Run `php artisan serve`
+---
 
-## Admin Login
-- Email: admin@minishop.com
-- Password: password123
+## Requirements
+- PHP >= 8.1
+- Composer
+- SQLite / MySQL (or other supported DB)
+- Laravel 12
 
-## Customer Access
-- Visit homepage to browse products
+---
+
+## Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/raphachegeke/minishop-ds.git
+cd minishop
+```
+
+2. Install PHP dependencies:
+```bash
+composer install
+```
+
+3. Copy .env.example to .env and configure your database:
+```bash
+cp .env.example .env
+```
+
+For quick testing, you can use SQLite.
+For production, set up MySQL and update .env accordingly.
+
+4. Generate application key:
+```bash
+php artisan key:generate
+```
+
+5. Run database migrations and seed the admin user:
+```bash
+php artisan migrate --seed
+```
+
+6. Start the development server:
+```bash
+php artisan serve
+```
+App will be available at http://127.0.0.1:8000
+
+Admin Login
+```bash
+Email: admin@minishop.com
+
+Password: password123
+```
+
+Access admin dashboard at /admin/dashboard
